@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicWatch | Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true">
+          <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <div class="brand-title">CivicWatch</div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-item active" href="./index.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13h8V3H3v10zM13 21h8V11h-8v10zM13 3h8v6h-8V3zM3 21h8v-6H3v6z"/></svg>Dashboard</a></li>
+          <li><a class="nav-item" href="./file-complaint.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>File Complaint</a></li>
+          <li><a class="nav-item" href="./track-status.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>Track Status</a></li>
+          <li><a class="nav-item" href="./reports.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 6-6"/></svg>Reports</a></li>
+          <li><a class="nav-item" href="./help.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><path d="M12 17h.01"/></svg>Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-card">
+          <h4>CCTS Portal</h4>
+          <p>Empowering citizens through transparency.</p>
+          <a href="./help.html">Support Center</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="header">
+        <h1 class="header-title">Dashboard</h1>
+        <div class="header-right">
+          <button class="icon-btn" type="button" aria-label="Notifications">
+            <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </button>
+          <div class="profile">
+            <div class="profile-meta">
+              <p class="name">John Doe</p>
+              <p class="role">Verified Citizen</p>
+            </div>
+            <div class="avatar">
+              <img src="https://picsum.photos/seed/john/100/100" alt="Profile" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="container stack-8">
+          <div class="grid grid-3">
+            <section class="stack-8">
+              <div class="card card-pad">
+                <h3>Quick Actions</h3>
+                <div class="grid" style="gap:12px">
+                  <a class="btn btn-primary btn-wide" href="./file-complaint.html">
+                    <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                    File New Complaint
+                  </a>
+                  <a class="btn btn-outline btn-wide" href="./track-status.html">
+                    <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+                    Track Complaint
+                  </a>
+                  <button class="btn btn-outline btn-wide" type="button">
+                    <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+                    Download Report
+                  </button>
+                </div>
+              </div>
+
+              <div class="card card-pad">
+                <h3>Categories</h3>
+                <div class="stack-8" style="gap:12px">
+                  <div class="section-head"><div class="muted">Bribery</div><span class="pill pill-warning">24</span></div>
+                  <div class="section-head"><div class="muted">Misuse of Power</div><span class="pill pill-warning">18</span></div>
+                  <div class="section-head"><div class="muted">Fraud</div><span class="pill pill-info">12</span></div>
+                  <div class="section-head"><div class="muted">Nepotism</div><span class="pill" style="background:#ede9fe;color:#6d28d9">8</span></div>
+                </div>
+              </div>
+            </section>
+
+            <section class="stack-8" style="grid-column: span 2">
+              <div class="section-head">
+                <h2 style="margin:0;font-size:20px;font-weight:950;color:#1f2937">Dashboard Overview</h2>
+                <div class="muted">Last 30 days</div>
+              </div>
+
+              <div class="kpi-grid">
+                <div class="kpi">
+                  <div class="kpi-top">
+                    <div class="kpi-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+                    <span class="pill pill-success">+12%</span>
+                  </div>
+                  <p class="kpi-title">Total Complaints</p>
+                  <p class="kpi-value">1,247</p>
+                  <p class="kpi-sub">+12% from last month</p>
+                </div>
+
+                <div class="kpi">
+                  <div class="kpi-top">
+                    <div class="kpi-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg></div>
+                    <span class="pill pill-success">+5%</span>
+                  </div>
+                  <p class="kpi-title">Pending Review</p>
+                  <p class="kpi-value">89</p>
+                  <p class="kpi-sub">+5% from last week</p>
+                </div>
+
+                <div class="kpi">
+                  <div class="kpi-top">
+                    <div class="kpi-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 22c5-1.5 8-6 8-11V6l-8-4-8 4v5c0 5 3 9.5 8 11z"/></svg></div>
+                    <span class="pill pill-success">+18%</span>
+                  </div>
+                  <p class="kpi-title">Resolved Cases</p>
+                  <p class="kpi-value">1,021</p>
+                  <p class="kpi-sub">+18% resolution rate</p>
+                </div>
+
+                <div class="kpi">
+                  <div class="kpi-top">
+                    <div class="kpi-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17.94 17.94A10 10 0 0 1 6.06 6.06"/><path d="M1 1l22 22"/><path d="M10.58 10.58A2 2 0 0 0 13.41 13.4"/><path d="M9.88 5.17A10 10 0 0 1 12 5c5.52 0 10 4.48 10 10 0 .73-.08 1.44-.23 2.13"/><path d="M6.1 6.1A10 10 0 0 0 2 12c0 1.2.22 2.35.62 3.41"/></svg></div>
+                  </div>
+                  <p class="kpi-title">Anonymous Reports</p>
+                  <p class="kpi-value">432</p>
+                  <p class="kpi-sub">35% of total complaints</p>
+                </div>
+              </div>
+
+              <div class="card card-pad">
+                <div class="section-head">
+                  <h3 style="margin:0">Growth Analysis</h3>
+                  <div class="muted">New Reports</div>
+                </div>
+                <div class="chart" aria-label="Weekly growth chart">
+                  <div class="bar" style="height:40%"></div>
+                  <div class="bar" style="height:60%"></div>
+                  <div class="bar" style="height:50%"></div>
+                  <div class="bar" style="height:80%"></div>
+                  <div class="bar" style="height:70%"></div>
+                  <div class="bar active" style="height:100%"></div>
+                  <div class="bar" style="height:90%"></div>
+                </div>
+                <div class="chart-legend"><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span><span>Sat</span><span>Sun</span></div>
+              </div>
+            </section>
+          </div>
+
+          <section class="card">
+            <div class="card-pad section-head" style="border-bottom:1px solid #f3f4f6">
+              <h3 style="margin:0">Recent Complaints</h3>
+              <a href="./reports.html" class="muted" style="font-weight:900;color:var(--primary)">View All</a>
+            </div>
+            <div class="table-wrap">
+              <table class="table" aria-label="Recent complaints">
+                <thead>
+                  <tr>
+                    <th>Complaint Details</th>
+                    <th>Category</th>
+                    <th>Status</th>
+                    <th>Time Filed</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="row-title">
+                        <div class="row-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+                        <div class="row-main">
+                          <div class="t">Bribery in License Office</div>
+                          <div class="s">#CC-2024-001</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Bribery</td>
+                    <td><span class="pill pill-warning">Under Review</span></td>
+                    <td>2 hours ago</td>
+                    <td><a href="./track-status.html" class="muted" style="font-weight:950">Track</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row-title">
+                        <div class="row-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+                        <div class="row-main">
+                          <div class="t">Misuse of Government Vehicle</div>
+                          <div class="s">#CC-2024-002</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Misuse of Power</td>
+                    <td><span class="pill pill-info">Investigating</span></td>
+                    <td>1 day ago</td>
+                    <td><a href="./track-status.html" class="muted" style="font-weight:950">Track</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="row-title">
+                        <div class="row-ico" aria-hidden="true"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg></div>
+                        <div class="row-main">
+                          <div class="t">Fraudulent Contract Award</div>
+                          <div class="s">#CC-2024-003</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>Fraud</td>
+                    <td><span class="pill pill-success">Resolved</span></td>
+                    <td>3 days ago</td>
+                    <td><a href="./track-status.html" class="muted" style="font-weight:950">Track</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="footer-grid">
+              <div>
+                <div class="row-title" style="gap:10px;margin-bottom:12px">
+                  <div class="row-ico" style="background:var(--primary);color:#fff" aria-hidden="true">
+                    <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 22c5-1.5 8-6 8-11V6l-8-4-8 4v5c0 5 3 9.5 8 11z"/></svg>
+                  </div>
+                  <div style="font-weight:950">CCTS</div>
+                </div>
+                <p>Empowering citizens to fight corruption through transparency and accountability.</p>
+              </div>
+              <div>
+                <h5>Quick Links</h5>
+                <ul>
+                  <li><a href="./file-complaint.html">File Complaint</a></li>
+                  <li><a href="./track-status.html">Track Status</a></li>
+                  <li><a href="./help.html">Help Center</a></li>
+                  <li><a href="./help.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5>Legal</h5>
+                <ul>
+                  <li><a href="./help.html">Privacy Policy</a></li>
+                  <li><a href="./help.html">Terms of Service</a></li>
+                  <li><a href="./help.html">Whistleblower Protection</a></li>
+                </ul>
+              </div>
+              <div class="footer-banner">
+                <h5 style="margin:0;font-weight:950">Emergency Hotline</h5>
+                <div class="hotline">1800-CORRUPT</div>
+                <small style="color:rgba(255,255,255,.75)">24/7 Support Available</small>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2024 Corruption Complaint &amp; Tracking System. All rights reserved.</p>
+              <div class="footer-links">
+                <a href="./help.html">Twitter</a>
+                <a href="./help.html">LinkedIn</a>
+                <a href="./help.html">Facebook</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

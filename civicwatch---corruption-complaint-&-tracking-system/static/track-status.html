@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicWatch | Track Status</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-badge" aria-hidden="true">
+          <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2l8 4v6c0 5-3.5 9.5-8 10-4.5-.5-8-5-8-10V6l8-4z" />
+            <path d="M9 12l2 2 4-4" />
+          </svg>
+        </div>
+        <div class="brand-title">CivicWatch</div>
+      </div>
+
+      <nav class="nav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-item" href="./index.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 13h8V3H3v10zM13 21h8V11h-8v10zM13 3h8v6h-8V3zM3 21h8v-6H3v6z"/></svg>Dashboard</a></li>
+          <li><a class="nav-item" href="./file-complaint.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M16 13H8"/><path d="M16 17H8"/><path d="M10 9H8"/></svg>File Complaint</a></li>
+          <li><a class="nav-item active" href="./track-status.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>Track Status</a></li>
+          <li><a class="nav-item" href="./reports.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 6-6"/></svg>Reports</a></li>
+          <li><a class="nav-item" href="./help.html"><svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.1 9a3 3 0 0 1 5.8 1c0 2-3 2-3 4"/><path d="M12 17h.01"/></svg>Help</a></li>
+        </ul>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="sidebar-card">
+          <h4>CCTS Portal</h4>
+          <p>Empowering citizens through transparency.</p>
+          <a href="./help.html">Support Center</a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="header">
+        <h1 class="header-title">Track status</h1>
+        <div class="header-right">
+          <button class="icon-btn" type="button" aria-label="Notifications">
+            <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a6 6 0 10-12 0c0 7-3 7-3 7h18s-3 0-3-7"/><path d="M13.73 21a2 2 0 01-3.46 0"/></svg>
+          </button>
+          <div class="profile">
+            <div class="profile-meta">
+              <p class="name">John Doe</p>
+              <p class="role">Verified Citizen</p>
+            </div>
+            <div class="avatar">
+              <img src="https://picsum.photos/seed/john/100/100" alt="Profile" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="content">
+        <div class="container stack-8">
+          <div class="center" style="max-width:680px;margin:0 auto">
+            <h2 style="margin:0;font-size:28px;font-weight:950">Track Your Complaint</h2>
+            <p style="margin:12px 0 0;color:var(--muted)">Enter your unique complaint ID to see the latest progress and updates.</p>
+          </div>
+
+          <section class="card card-pad" style="border-radius:28px">
+            <form class="grid" style="grid-template-columns:1fr auto;gap:14px" action="#" method="get">
+              <div class="field" style="margin:0">
+                <label class="label" for="complaintId">Complaint ID</label>
+                <input class="input" id="complaintId" name="complaintId" type="text" placeholder="Enter Complaint ID (e.g., CC-2024-001)" />
+              </div>
+              <button class="btn btn-primary" type="submit" style="align-self:end;padding-left:22px;padding-right:22px">Track Status</button>
+            </form>
+            <p style="margin:14px 0 0;color:var(--muted-2);font-size:12px">This static HTML page shows an example timeline below.</p>
+          </section>
+
+          <section class="card card-pad" style="border-radius:28px">
+            <div class="section-head" style="padding-bottom:16px;border-bottom:1px solid #f3f4f6">
+              <div>
+                <div style="font-size:12px;color:var(--muted-2);font-weight:900;text-transform:uppercase;letter-spacing:.08em">Current Status</div>
+                <div style="margin-top:6px;font-size:20px;font-weight:950;color:#1f2937">Complaint #CC-2024-001</div>
+              </div>
+              <span class="pill pill-info">Under Investigation</span>
+            </div>
+
+            <div style="margin-top:18px" class="timeline">
+              <div class="step done">
+                <div class="dot" aria-hidden="true"></div>
+                <h4>Complaint Filed</h4>
+                <div class="date">Jan 15, 2024 - 10:30 AM</div>
+              </div>
+              <div class="step done">
+                <div class="dot" aria-hidden="true"></div>
+                <h4>Initial Review Completed</h4>
+                <div class="date">Jan 16, 2024 - 2:15 PM</div>
+              </div>
+              <div class="step done">
+                <div class="dot" aria-hidden="true"></div>
+                <h4>Investigation Started</h4>
+                <div class="date">Jan 18, 2024 - 9:00 AM</div>
+                <div class="note">An investigation team has been assigned and is currently gathering evidence and conducting interviews at the regional licensing office.</div>
+              </div>
+              <div class="step">
+                <div class="dot" aria-hidden="true"></div>
+                <h4>Final Report</h4>
+                <div class="date">Pending</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="callout">
+            <div class="ico" aria-hidden="true">
+              <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+            </div>
+            <div>
+              <h4>Need more details?</h4>
+              <p>If you have more evidence to add to this case, use the complaint ID and submit additional files through your local authority portal.</p>
+              <a href="./file-complaint.html">Upload Additional Evidence →</a>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="footer-grid">
+              <div>
+                <div class="row-title" style="gap:10px;margin-bottom:12px">
+                  <div class="row-ico" style="background:var(--primary);color:#fff" aria-hidden="true">
+                    <svg class="nav-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M12 22c5-1.5 8-6 8-11V6l-8-4-8 4v5c0 5 3 9.5 8 11z"/></svg>
+                  </div>
+                  <div style="font-weight:950">CCTS</div>
+                </div>
+                <p>Empowering citizens to fight corruption through transparency and accountability.</p>
+              </div>
+              <div>
+                <h5>Quick Links</h5>
+                <ul>
+                  <li><a href="./file-complaint.html">File Complaint</a></li>
+                  <li><a href="./track-status.html">Track Status</a></li>
+                  <li><a href="./help.html">Help Center</a></li>
+                  <li><a href="./help.html">Contact Us</a></li>
+                </ul>
+              </div>
+              <div>
+                <h5>Legal</h5>
+                <ul>
+                  <li><a href="./help.html">Privacy Policy</a></li>
+                  <li><a href="./help.html">Terms of Service</a></li>
+                  <li><a href="./help.html">Whistleblower Protection</a></li>
+                </ul>
+              </div>
+              <div class="footer-banner">
+                <h5 style="margin:0;font-weight:950">Emergency Hotline</h5>
+                <div class="hotline">1800-CORRUPT</div>
+                <small style="color:rgba(255,255,255,.75)">24/7 Support Available</small>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>© 2024 Corruption Complaint &amp; Tracking System. All rights reserved.</p>
+              <div class="footer-links">
+                <a href="./help.html">Twitter</a>
+                <a href="./help.html">LinkedIn</a>
+                <a href="./help.html">Facebook</a>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
