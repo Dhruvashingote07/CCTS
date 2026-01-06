@@ -1,0 +1,26 @@
+civicwatch---corruption-complaint-&-tracking-system/
+│
+├── static/
+│   ├── index.html            # Home page
+│   ├── file-complaint.html   # Complaint submission page
+│   ├── track-status.html     # Complaint tracking page
+│   ├── reports.html          # Reports page
+│   ├── help.html             # Help & support page
+│   └── styles.css            # Main stylesheet
+|__Backend :
+|   ├── repository 
+│   ├── controller 
+│   ├── DTO
+│   ├── MAVEN
+│   ├── Apache-cafka
+│   └── Data Jpa
+|├──Database 
+│   ├── Security
+│   ├── Data Jpa 
+│   ├── Hybernate
+│   ├── JWT
+│   └── Junit
+|__
+|
+|
+|
